@@ -8,14 +8,12 @@
   "license": "MIT",
   "config": {
     "app_to_debug": "excel",
-    "app_type_to_debug": "web",
-    "dev_server_port": 3000,
-    "document": "https://onedrive.live.com/edit.aspx?resid=B0B14217A0C3433B!251&ithint=file%2cxlsx"
+    "app_type_to_debug": "desktop",
+    "dev_server_port": 3000
   },
   "scripts": {
-    "build": "webpack --mode production --https false",
-    "build:dev": "webpack --mode development --https false",
-    "build:test": "webpack --mode development --https false --config ./test/webpack.config.js",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
     "dev-server": "webpack serve --mode development",
     "lint": "office-addin-lint check",
     "lint:fix": "office-addin-lint fix",
@@ -66,5 +64,8 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "4.11.1"
   },
-  "prettier": "office-addin-prettier-config"
+  "prettier": "office-addin-prettier-config",
+  "browserslist": [
+    "ie 11"
+  ]
 }

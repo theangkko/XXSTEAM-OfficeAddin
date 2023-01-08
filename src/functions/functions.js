@@ -12,6 +12,28 @@ export function add(first, second) {
 }
 
 /**
+ * Multiply two numbers
+ * @customfunction
+ * @param {number} first First number
+ * @param {number} second Second number
+ * @returns {number} The multiply of the two numbers.
+ */
+export function multi(first, second) {
+  return first * second;
+}
+
+/**
+ * Divide two numbers
+ * @customfunction
+ * @param {number} first First number
+ * @param {number} second Second number
+ * @returns {number} The divide of the two numbers.
+ */
+export function div(first, second) {
+  return first / second;
+}
+
+/**
  * Displays the current time once a second
  * @customfunction
  * @param {CustomFunctions.StreamingInvocation<string>} invocation Custom function invocation
