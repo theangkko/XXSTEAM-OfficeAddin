@@ -13,9 +13,9 @@
     "document": "https://onedrive.live.com/edit.aspx?resid=B0B14217A0C3433B!251&ithint=file%2cxlsx"
   },
   "scripts": {
-    "build": "webpack --mode production --https false",
-    "build:dev": "webpack --mode development --https false",
-    "build:test": "webpack --mode development --https false --config ./test/webpack.config.js",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:test": "webpack --mode development --config ./test/webpack.config.js",
     "dev-server": "webpack serve --mode development",
     "lint": "office-addin-lint check",
     "lint:fix": "office-addin-lint fix",
