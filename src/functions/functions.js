@@ -86,3 +86,30 @@ export function logMessage(message) {
 
   return message;
 }
+
+/**
+ * Divide2 two numbers
+ * @customfunction
+ * @param {number} first First number
+ * @param {number} second Second number
+ * @returns {number} The divide of the two numbers.
+ */
+export function div2(first, second) {
+  return first / second;
+}
+
+/**
+ * Steam FunctionTsatP()
+ * @customfunction
+ * @param {number} p First number
+ * @returns {number} The saturated Pressure.
+ */
+export function Tsat_p(p) {
+  let fn_return_value;
+  if ((0.000611657 <= p) && (p <= (22.06395 + 0.001))) {
+      fn_return_value = add(p, 3);
+  } else {
+      fn_return_value = Number.NaN;
+  }
+  return fn_return_value;
+}
