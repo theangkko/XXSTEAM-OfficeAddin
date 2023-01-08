@@ -8,9 +8,9 @@
   <Description DefaultValue="Write BRsteam Excel functions in JavaScript."/>
   <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://theangkko.github.io/webaddinBRSTEAM/help"/>
+  <SupportUrl DefaultValue="https://theangkko.github.io/webaddinBRSTEAM"/>
   <AppDomains>
-    <AppDomain>https://theangkko.github.io/webaddinBRSTEAM</AppDomain>
+    <AppDomain>https://brfluid.xyz</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
