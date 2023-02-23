@@ -1,0 +1,44 @@
+name: 01 Deploy OfficeAddin DIST to GitHub Page
+env:
+  PUBLISH_DIR: dist
+  
+on:
+  # Runs on pushes targeting the default branch
+#   push:
+#     branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+        
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Use Node.js 
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build --if-present
+#       - run: npm ci
+#       - run: npm test
+        
+      
+#       - name: copy index.html to 404.html
+#         run: cp wwwroot/index.html wwwroot/4044.html
+
+      - name: Commit to GitHub pages Repo
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: gh-pages
+          build_dir: ${{ env.PUBLISH_DIR }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}  
