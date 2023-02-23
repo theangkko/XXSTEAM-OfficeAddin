@@ -65,8 +65,8 @@
         },
         {
             "description": "Add two Import other JS",
-            "id": "ADDTWO",
-            "name": "ADDTWO",
+            "id": "ADDFIVE",
+            "name": "ADDFIVE",
             "parameters": [
                 {
                     "description": "First number",

@@ -4,7 +4,7 @@
   <Version>1.0.0.0</Version>
   <ProviderName>BRFLUID</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="BRBFLUID"/>
+  <DisplayName DefaultValue="BRFLUID Office Add-in"/>
   <Description DefaultValue="BRsteam Excel functions in JavaScript"/>
   <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
@@ -99,8 +99,8 @@
         <bt:String id="Functions.Namespace" DefaultValue="BR"/>
 
         <bt:String id="GetStarted.Title" DefaultValue="BRsteam office add-in"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Commands Icon"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="BRFLUID Menu"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="BRFLUID Add-in"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="IF97 SteamTable"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="BRsteam add-in loaded succesfully. Click the 'Show Taskpane' button to get started."/>

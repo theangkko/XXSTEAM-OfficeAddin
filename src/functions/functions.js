@@ -74,6 +74,6 @@ export function logMessage(message) {
  * @param {number} first First number
  * @returns {number} The add numbers.
  */
-export function addtwo(first) {
+export function addfive(first) {
   return addtwofromJS(first);
 }
