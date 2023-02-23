@@ -30,6 +30,11 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
 	"postCreateCommand": "npm install",
+	"portsAttributes": {
+		"5000": {
+			"label": "Staging"
+		}
+	},
 	
 
 	// Configure tool-specific properties.
