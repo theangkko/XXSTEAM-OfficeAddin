@@ -99,8 +99,8 @@
         <bt:String id="Functions.Namespace" DefaultValue="BR"/>
 
         <bt:String id="GetStarted.Title" DefaultValue="BRsteam office add-in"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Commands Icon"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="BRFLUID Menu"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="BRFLUID Add-in"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="IF97 SteamTable"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="BRsteam add-in loaded succesfully. Click the 'Show Taskpane' button to get started."/>
