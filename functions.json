@@ -1,0 +1,1482 @@
+{
+    "functions": [
+        {
+            "description": "Add two numbers",
+            "id": "ADD",
+            "name": "ADD",
+            "parameters": [
+                {
+                    "description": "First number",
+                    "name": "first",
+                    "type": "number"
+                },
+                {
+                    "description": "Second number",
+                    "name": "second",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Increments a value once a second.",
+            "id": "INCREMENT",
+            "name": "INCREMENT",
+            "options": {
+                "stream": true
+            },
+            "parameters": [
+                {
+                    "description": "Amount to increment",
+                    "name": "incrementBy",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturation temperature",
+            "id": "TSAT_P",
+            "name": "TSAT_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Temperture as a function of pressure and enthalpy",
+            "id": "T_PH",
+            "name": "T_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Temperture as a function of pressure and entropy",
+            "id": "T_PS",
+            "name": "T_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Temperture as a function of enthalpy and entropy",
+            "id": "T_HS",
+            "name": "T_HS",
+            "parameters": [
+                {
+                    "description": "enthalpy",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturation pressure",
+            "id": "PSAT_T",
+            "name": "PSAT_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Pressure as a function of enthalpy and entropy.",
+            "id": "P_HS",
+            "name": "P_HS",
+            "parameters": [
+                {
+                    "description": "enthalpy",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Pressure as a function of enthalpy and rho (density). \nVery unaccurate for solid water region since it's almost incompressible!",
+            "id": "P_HRHO",
+            "name": "P_HRHO",
+            "parameters": [
+                {
+                    "description": "enthalpy",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "density",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor enthalpy",
+            "id": "HV_P",
+            "name": "HV_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid enthalpy",
+            "id": "HL_P",
+            "name": "HL_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor enthalpy",
+            "id": "HV_T",
+            "name": "HV_T",
+            "parameters": [
+                {
+                    "description": "Temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid enthalpy",
+            "id": "HL_T",
+            "name": "HL_T",
+            "parameters": [
+                {
+                    "description": "Temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Enthalpy as a function of pressure and temperature.",
+            "id": "H_PT",
+            "name": "H_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Enthalpy as a function of pressure and entropy.",
+            "id": "H_PS",
+            "name": "H_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Enthalpy as a function of pressure and vapor fraction",
+            "id": "H_PX",
+            "name": "H_PX",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "vapor fraction",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Enthalpy as a function of temperature and vapor fraction",
+            "id": "H_TX",
+            "name": "H_TX",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "vapor fraction",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Enthalpy as a function of pressure and density. \nObserve for low temperatures (liquid) this equation has 2 solutions. (Not valid!!)",
+            "id": "H_PRHO",
+            "name": "H_PRHO",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "density",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor volume",
+            "id": "VV_P",
+            "name": "VV_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid volume",
+            "id": "VL_P",
+            "name": "VL_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor volume",
+            "id": "VV_T",
+            "name": "VV_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid volume",
+            "id": "VL_T",
+            "name": "VL_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific volume as a function of pressure and temperature.",
+            "id": "V_PT",
+            "name": "V_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific volume as a function of pressure and enthalpy",
+            "id": "V_PH",
+            "name": "V_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific volume as a function of pressure and entropy.",
+            "id": "V_PS",
+            "name": "V_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor density",
+            "id": "RHOV_P",
+            "name": "RHOV_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid density",
+            "id": "RHOL_P",
+            "name": "RHOL_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor density",
+            "id": "RHOV_T",
+            "name": "RHOV_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid density",
+            "id": "RHOL_T",
+            "name": "RHOL_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Density as a function of pressure and temperature.",
+            "id": "RHO_PT",
+            "name": "RHO_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Density as a function of pressure and enthalpy",
+            "id": "RHO_PH",
+            "name": "RHO_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Density as a function of pressure and entropy",
+            "id": "RHO_PS",
+            "name": "RHO_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "ntropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor entropy",
+            "id": "SV_P",
+            "name": "SV_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid entropy",
+            "id": "SL_P",
+            "name": "SL_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor entropy",
+            "id": "SV_T",
+            "name": "SV_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid entropy",
+            "id": "SL_T",
+            "name": "SL_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific entropy as a function of pressure and temperature \n(Returns saturated vapor Enthalpy if mixture.)",
+            "id": "S_PT",
+            "name": "S_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific entropy as a function of pressure and enthalpy",
+            "id": "S_PH",
+            "name": "S_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor internal energy",
+            "id": "UV_P",
+            "name": "UV_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid internal energy",
+            "id": "UL_P",
+            "name": "UL_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor internal energy",
+            "id": "UV_T",
+            "name": "UV_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid internal energy",
+            "id": "UL_T",
+            "name": "UL_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific internal energy as a function of pressure and temperature.",
+            "id": "U_PT",
+            "name": "U_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific internal energy as a function of pressure and enthalpy",
+            "id": "U_PH",
+            "name": "U_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific internal energy as a function of pressure and entropy.",
+            "id": "U_PS",
+            "name": "U_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor heat capacity",
+            "id": "CPV_P",
+            "name": "CPV_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid heat capacity",
+            "id": "CPL_P",
+            "name": "CPL_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor heat capacity",
+            "id": "CPV_T",
+            "name": "CPV_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid heat capacity",
+            "id": "CPL_T",
+            "name": "CPL_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific isobaric heat capacity as a function of pressure and temperature.",
+            "id": "CP_PT",
+            "name": "CP_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific isobaric heat capacity as a function of pressure and enthalpy",
+            "id": "CP_PH",
+            "name": "CP_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific isobaric heat capacity as a function of pressure and entropy.",
+            "id": "CP_PS",
+            "name": "CP_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor isochoric heat capacity",
+            "id": "CVV_P",
+            "name": "CVV_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid isochoric heat capacity",
+            "id": "CVL_P",
+            "name": "CVL_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor isochoric heat capacity",
+            "id": "CVV_T",
+            "name": "CVV_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid isochoric heat capacity",
+            "id": "CVL_T",
+            "name": "CVL_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific isochoric heat capacity as a function of pressure and temperature.",
+            "id": "CV_PT",
+            "name": "CV_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific isochoric heat capacity as a function of pressure and enthalpy",
+            "id": "CV_PH",
+            "name": "CV_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Specific isochoric heat capacity as a function of pressure and entropy.",
+            "id": "CV_PS",
+            "name": "CV_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor speed of sound",
+            "id": "WV_P",
+            "name": "WV_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid speed of sound",
+            "id": "WL_P",
+            "name": "WL_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor speed of sound",
+            "id": "WV_T",
+            "name": "WV_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid speed of sound",
+            "id": "WL_T",
+            "name": "WL_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Speed of sound as a function of pressure and temperature.",
+            "id": "W_PT",
+            "name": "W_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Speed of sound as a function of pressure and enthalpy",
+            "id": "W_PH",
+            "name": "W_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Speed of sound as a function of pressure and entropy.",
+            "id": "W_PS",
+            "name": "W_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Viscosity as a function of pressure and temperature.",
+            "id": "MY_PT",
+            "name": "MY_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Viscosity as a function of pressure and enthalpy",
+            "id": "MY_PH",
+            "name": "MY_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Viscosity as a function of pressure and entropy.",
+            "id": "MY_PS",
+            "name": "MY_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Prandtl as a function of Pressure and Temperature",
+            "id": "PR_PT",
+            "name": "PR_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "Temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Prandtl as a function of Pressure and Enthalpy",
+            "id": "PR_PH",
+            "name": "PR_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor thermal conductivity",
+            "id": "TCL_P",
+            "name": "TCL_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid thermal conductivity",
+            "id": "TCV_P",
+            "name": "TCV_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated vapor thermal conductivity",
+            "id": "TCL_T",
+            "name": "TCL_T",
+            "parameters": [
+                {
+                    "description": "Temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Saturated liquid thermal conductivity",
+            "id": "TCV_T",
+            "name": "TCV_T",
+            "parameters": [
+                {
+                    "description": "Temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Thermal conductivity as a function of pressure and temperature.",
+            "id": "TC_PT",
+            "name": "TC_PT",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Thermal conductivity as a function of pressure and enthalpy",
+            "id": "TC_PH",
+            "name": "TC_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Thermal conductivity as a function of enthalpy and entropy",
+            "id": "TC_HS",
+            "name": "TC_HS",
+            "parameters": [
+                {
+                    "description": "enthalpy",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Surface tension for two phase water/steam as a function of Temperature",
+            "id": "ST_T",
+            "name": "ST_T",
+            "parameters": [
+                {
+                    "description": "temperature",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Surface tension for two phase water/steam as a function of Pressure",
+            "id": "ST_P",
+            "name": "ST_P",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "vapor fraction as a function of pressure and enthalpy",
+            "id": "X_PH",
+            "name": "X_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "vapor fraction as a function of pressure and entropy.",
+            "id": "X_PS",
+            "name": "X_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "vapor volume fraction as a function of pressure and enthalpy",
+            "id": "VX_PH",
+            "name": "VX_PH",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "enthalpy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "vapor volume fraction as a function of pressure and entropy.",
+            "id": "VX_PS",
+            "name": "VX_PS",
+            "parameters": [
+                {
+                    "description": "pressure",
+                    "name": "input1",
+                    "type": "number"
+                },
+                {
+                    "description": "entropy",
+                    "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        }
+    ]
+}
