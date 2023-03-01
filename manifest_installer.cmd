@@ -63,8 +63,8 @@ ECHO Create registry file for Excel..
 (
     ECHO Windows Registry Editor Version 5.00
     ECHO ""
-    ECHO [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\WEF\TrustedCatalogs\{aa2b5cf8-00a8-4d2e-9781-8c00ac234d73}]
-    ECHO "Id"="{aa2b5cf8-00a8-4d2e-9781-8c00ac234d73}"
+    ECHO [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\WEF\TrustedCatalogs\{5fb4e45b-354b-4564-ac24-b31db5bbeb30}]
+    ECHO "Id"="{5fb4e45b-354b-4564-ac24-b31db5bbeb30}"
     ECHO "Url"="\\\\%computer%\\%ShareName%"
     ECHO "Flags"=dword:00000001 
 ) > %FolderLocation%/TrustNetworkShareCatalog.reg
