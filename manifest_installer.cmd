@@ -63,7 +63,7 @@ ECHO Create registry file for Excel..
 @REM Network path always contains computer name as first parameter. Create registry file according to Excel/Office docs.
 (
     ECHO Windows Registry Editor Version 5.00
-    ECHO ""
+    ECHO [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\WEF\TrustedCatalogs]
     ECHO [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\WEF\TrustedCatalogs\{5fb4e45b-354b-4564-ac24-b31db5bbeb30}]
     ECHO "Id"="{5fb4e45b-354b-4564-ac24-b31db5bbeb30}"
     ECHO "Url"="\\\\%computer%\\%ShareName%"
