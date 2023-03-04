@@ -3,11 +3,11 @@
 @REM https://docs.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins
 
 SET ManifestFolderName=manifest
-@SET FolderLocation=%LOCALAPPDATA%\%ManifestFolderName%
-SET FolderLocation=C:\%ManifestFolderName%
-SET computer=%computername%
 SET user=%USERNAME%
-SET ShareName=manifest
+@REM SET FolderLocation=%USERPROFILE%\%ManifestFolderName%
+SET FolderLocation=C:\%ManifestFolderName%_%USERNAME%
+SET computer=%computername%
+SET ShareName=manifest_%user%
 
 REM BatchGotAdmin; https://stackoverflow.com/a/10052222/12858021
 :-------------------------------------
@@ -50,13 +50,13 @@ ECHO Created folder for install manifest @%FolderLocation%.
 ECHO Download install manifest to folder..
 
 @REM Download install manifests into new folder
-@REM curl.exe --output %FolderLocation%/manifest_brsteam.xml --url https://theangkko.github.io/BRSTEAM-OfficeAddin/manifest_brsteam.xml --ssl-no-revoke
-curl.exe --output %FolderLocation%/manifest_brsteam.xml --url https://theangkko.github.io/BRSTEAM-OfficeAddin/manifest_brsteam.xml --ssl-no-revoke
+@REM curl.exe --output %FolderLocation%/manifest_brxsteam.xml --url https://theangkko.github.io/BR-XSTEAM-OfficeAddin/manifest_brxsteam.xml --ssl-no-revoke
+curl.exe --output %FolderLocation%/manifest_brxsteam.xml --url https://theangkko.github.io/BR-XSTEAM-OfficeAddin/manifest_brxsteam.xml --ssl-no-revoke
 
 ECHO Share folder with Excel network..
 
 @REM Share folder with user
-@net share %ShareName%=%FolderLocation% /grant:%user%,FULL
+@REM net share %ShareName%=%FolderLocation% /grant:%user%,FULL
 
 ECHO Create registry file for Excel..
 
