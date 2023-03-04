@@ -18,7 +18,7 @@ There are two method to install Office Add-in to your excel. <br>
 
 <br>
 
-<img src="assets\webSideloadcapture.png" alt= “” width="700">
+<img src="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/webSideloadcapture.png" alt= “” width="700">
 
 
 <br><br><br><br><br>
@@ -37,7 +37,7 @@ For example <br>
  =XX.p_PT (pressure, Temperature) >> Get Enthalpy, kJ/kg <br>
 
 <br>
-<img src="assets\howtousefunction01.png" alt= “” width="800">
+<img src="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/howtousefunction01.png" alt= “” width="800">
 <br>
 <br>
 <br>
