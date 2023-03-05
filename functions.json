@@ -1,18 +1,23 @@
 {
     "functions": [
         {
-            "description": "Add two numbers",
-            "id": "ADD",
-            "name": "ADD",
+            "description": "friction factor",
+            "id": "FRICTIONFACTOR",
+            "name": "FRICTIONFACTOR",
             "parameters": [
                 {
-                    "description": "First number",
-                    "name": "first",
+                    "description": "diameter, mm",
+                    "name": "dia",
                     "type": "number"
                 },
                 {
-                    "description": "Second number",
-                    "name": "second",
+                    "description": "absolute roughness, mm",
+                    "name": "roughness",
+                    "type": "number"
+                },
+                {
+                    "description": "reynolds number",
+                    "name": "reynolds",
                     "type": "number"
                 }
             ],
@@ -22,24 +27,6 @@
         },
         {
             "description": "Increments a value once a second.",
-            "id": "INCREMENT",
-            "name": "INCREMENT",
-            "options": {
-                "stream": true
-            },
-            "parameters": [
-                {
-                    "description": "Amount to increment",
-                    "name": "incrementBy",
-                    "type": "number"
-                }
-            ],
-            "result": {
-                "type": "number"
-            }
-        },
-        {
-            "description": "Saturation temperature",
             "id": "TSAT_P",
             "name": "TSAT_P",
             "parameters": [
