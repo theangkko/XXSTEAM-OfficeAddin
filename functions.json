@@ -1,6 +1,15 @@
 {
     "functions": [
         {
+            "description": "check version",
+            "id": "VERSIONXSTEAM",
+            "name": "VERSIONXSTEAM",
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
             "description": "friction factor",
             "id": "FRICTIONFACTOR",
             "name": "FRICTIONFACTOR",
