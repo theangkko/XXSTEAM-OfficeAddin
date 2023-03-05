@@ -4,7 +4,7 @@
   <Version>1.0.0.0</Version>
   <ProviderName>BRFLUID</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="BRFLUID Addin"/>
+  <DisplayName DefaultValue="X-Steam  by BRFLUID"/>
   <Description DefaultValue="X-steam Excel functions in JavaScript"/>
   <IconUrl DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/iconXsteam-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/iconXsteam-64.png"/>
@@ -104,7 +104,7 @@
 
         <bt:String id="GetStarted.Title" DefaultValue="BR-XSTEAM addin"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="BRFLUID Addin"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="IF97 SteamTable"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="X-Steam SteamTable"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Loaded succesfully."/>
