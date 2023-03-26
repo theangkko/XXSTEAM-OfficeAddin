@@ -2,8 +2,8 @@
     "functions": [
         {
             "description": "check version",
-            "id": "VERSIONXSTEAM",
-            "name": "VERSIONXSTEAM",
+            "id": "VERSION_XSTEAM",
+            "name": "VERSION_XSTEAM",
             "parameters": [],
             "result": {
                 "type": "string"
@@ -36,11 +36,12 @@
         },
         {
             "description": "Increments a value once a second.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "TSAT_P",
             "name": "TSAT_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -50,17 +51,18 @@
             }
         },
         {
-            "description": "Temperture as a function of pressure and enthalpy",
+            "description": "Temperture,'C as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "T_PH",
             "name": "T_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -70,17 +72,18 @@
             }
         },
         {
-            "description": "Temperture as a function of pressure and entropy",
+            "description": "Temperture,'C as a function of pressure and entropy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "T_PS",
             "name": "T_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -90,17 +93,18 @@
             }
         },
         {
-            "description": "Temperture as a function of enthalpy and entropy",
+            "description": "Temperture,'C as a function of enthalpy and entropy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "T_HS",
             "name": "T_HS",
             "parameters": [
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -110,7 +114,8 @@
             }
         },
         {
-            "description": "Saturation pressure",
+            "description": "Saturation pressure, bara",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "PSAT_T",
             "name": "PSAT_T",
             "parameters": [
@@ -125,17 +130,18 @@
             }
         },
         {
-            "description": "Pressure as a function of enthalpy and entropy.",
+            "description": "pressure, bara as a function of enthalpy and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "P_HS",
             "name": "P_HS",
             "parameters": [
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -145,17 +151,18 @@
             }
         },
         {
-            "description": "Pressure as a function of enthalpy and rho (density). \nVery unaccurate for solid water region since it's almost incompressible!",
+            "description": "pressure, bara as a function of enthalpy and rho (density). \nVery unaccurate for solid water region since it's almost incompressible!",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "P_HRHO",
             "name": "P_HRHO",
             "parameters": [
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "density",
+                    "description": "density, kg/m3",
                     "name": "input2",
                     "type": "number"
                 }
@@ -165,12 +172,13 @@
             }
         },
         {
-            "description": "Saturated vapor enthalpy",
+            "description": "Saturated vapor enthalpy, kJ/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "HV_P",
             "name": "HV_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -180,12 +188,13 @@
             }
         },
         {
-            "description": "Saturated liquid enthalpy",
+            "description": "Saturated liquid enthalpy, kJ/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "HL_P",
             "name": "HL_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -195,7 +204,8 @@
             }
         },
         {
-            "description": "Saturated vapor enthalpy",
+            "description": "Saturated vapor enthalpy, kJ/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "HV_T",
             "name": "HV_T",
             "parameters": [
@@ -210,12 +220,13 @@
             }
         },
         {
-            "description": "Saturated liquid enthalpy",
+            "description": "Saturated liquid enthalpy, kJ/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "HL_T",
             "name": "HL_T",
             "parameters": [
                 {
-                    "description": "Temperature",
+                    "description": "Temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -225,12 +236,13 @@
             }
         },
         {
-            "description": "Enthalpy as a function of pressure and temperature.",
+            "description": "Enthalpy, kJ/kg as a function of pressure and temperature.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "H_PT",
             "name": "H_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
@@ -245,17 +257,18 @@
             }
         },
         {
-            "description": "Enthalpy as a function of pressure and entropy.",
+            "description": "Enthalpy, kJ/kg as a function of pressure and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "H_PS",
             "name": "H_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -265,12 +278,13 @@
             }
         },
         {
-            "description": "Enthalpy as a function of pressure and vapor fraction",
+            "description": "Enthalpy, kJ/kg as a function of pressure and vapor fraction",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "H_PX",
             "name": "H_PX",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
@@ -285,12 +299,13 @@
             }
         },
         {
-            "description": "Enthalpy as a function of temperature and vapor fraction",
+            "description": "Enthalpy, kJ/kg as a function of temperature and vapor fraction",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "H_TX",
             "name": "H_TX",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 },
@@ -305,17 +320,18 @@
             }
         },
         {
-            "description": "Enthalpy as a function of pressure and density. \nObserve for low temperatures (liquid) this equation has 2 solutions. (Not valid!!)",
+            "description": "Enthalpy, kJ/kg as a function of pressure and density. \nObserve for low temperatures (liquid) this equation has 2 solutions. (Not valid!!)",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "H_PRHO",
             "name": "H_PRHO",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "density",
+                    "description": "density, kg/m3",
                     "name": "input2",
                     "type": "number"
                 }
@@ -325,12 +341,13 @@
             }
         },
         {
-            "description": "Saturated vapor volume",
+            "description": "Saturated vapor volume, m3/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "VV_P",
             "name": "VV_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -340,12 +357,13 @@
             }
         },
         {
-            "description": "Saturated liquid volume",
+            "description": "Saturated liquid volume, m3/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "VL_P",
             "name": "VL_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -355,12 +373,13 @@
             }
         },
         {
-            "description": "Saturated vapor volume",
+            "description": "Saturated vapor volume, m3/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "VV_T",
             "name": "VV_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -370,12 +389,13 @@
             }
         },
         {
-            "description": "Saturated liquid volume",
+            "description": "Saturated liquid volume, m3/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "VL_T",
             "name": "VL_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -385,17 +405,18 @@
             }
         },
         {
-            "description": "Specific volume as a function of pressure and temperature.",
+            "description": "Specific volume, m3/kg as a function of pressure and temperature.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "V_PT",
             "name": "V_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input2",
                     "type": "number"
                 }
@@ -405,17 +426,18 @@
             }
         },
         {
-            "description": "Specific volume as a function of pressure and enthalpy",
+            "description": "Specific volume, m3/kg as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "V_PH",
             "name": "V_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -425,17 +447,18 @@
             }
         },
         {
-            "description": "Specific volume as a function of pressure and entropy.",
+            "description": "Specific volume, m3/kg as a function of pressure and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "V_PS",
             "name": "V_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -445,12 +468,13 @@
             }
         },
         {
-            "description": "Saturated vapor density",
+            "description": "Saturated vapor density, kg/m3",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "RHOV_P",
             "name": "RHOV_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -460,12 +484,13 @@
             }
         },
         {
-            "description": "Saturated liquid density",
+            "description": "Saturated liquid density, kg/m3",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "RHOL_P",
             "name": "RHOL_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -475,12 +500,13 @@
             }
         },
         {
-            "description": "Saturated vapor density",
+            "description": "Saturated vapor density, kg/m3",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "RHOV_T",
             "name": "RHOV_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -490,12 +516,13 @@
             }
         },
         {
-            "description": "Saturated liquid density",
+            "description": "Saturated liquid density, kg/m3",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "RHOL_T",
             "name": "RHOL_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -505,17 +532,18 @@
             }
         },
         {
-            "description": "Density as a function of pressure and temperature.",
+            "description": "Density, kg/m3 as a function of pressure and temperature.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "RHO_PT",
             "name": "RHO_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input2",
                     "type": "number"
                 }
@@ -525,17 +553,18 @@
             }
         },
         {
-            "description": "Density as a function of pressure and enthalpy",
+            "description": "Density, kg/m3 as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "RHO_PH",
             "name": "RHO_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -545,17 +574,18 @@
             }
         },
         {
-            "description": "Density as a function of pressure and entropy",
+            "description": "Density, kg/m3 as a function of pressure and entropy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "RHO_PS",
             "name": "RHO_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "ntropy",
+                    "description": "Entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -565,12 +595,13 @@
             }
         },
         {
-            "description": "Saturated vapor entropy",
+            "description": "Saturated vapor entropy, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "SV_P",
             "name": "SV_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -580,12 +611,13 @@
             }
         },
         {
-            "description": "Saturated liquid entropy",
+            "description": "Saturated liquid entropy, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "SL_P",
             "name": "SL_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -595,12 +627,13 @@
             }
         },
         {
-            "description": "Saturated vapor entropy",
+            "description": "Saturated vapor entropy, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "SV_T",
             "name": "SV_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -610,12 +643,13 @@
             }
         },
         {
-            "description": "Saturated liquid entropy",
+            "description": "Saturated liquid entropy, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "SL_T",
             "name": "SL_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -625,17 +659,18 @@
             }
         },
         {
-            "description": "Specific entropy as a function of pressure and temperature \n(Returns saturated vapor Enthalpy if mixture.)",
+            "description": "Specific entropy, kJ/kg/K as a function of pressure and temperature \n(Returns saturated vapor Enthalpy if mixture.)",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "S_PT",
             "name": "S_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -645,17 +680,18 @@
             }
         },
         {
-            "description": "Specific entropy as a function of pressure and enthalpy",
+            "description": "Specific entropy, kJ/kg/K as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "S_PH",
             "name": "S_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -665,12 +701,13 @@
             }
         },
         {
-            "description": "Saturated vapor internal energy",
+            "description": "Saturated vapor internal energy, kJ/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "UV_P",
             "name": "UV_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -680,12 +717,13 @@
             }
         },
         {
-            "description": "Saturated liquid internal energy",
+            "description": "Saturated liquid internal energy, kJ/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "UL_P",
             "name": "UL_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -695,12 +733,13 @@
             }
         },
         {
-            "description": "Saturated vapor internal energy",
+            "description": "Saturated vapor internal energy, kJ/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "UV_T",
             "name": "UV_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -710,12 +749,13 @@
             }
         },
         {
-            "description": "Saturated liquid internal energy",
+            "description": "Saturated liquid internal energy, kJ/kg",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "UL_T",
             "name": "UL_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -725,17 +765,18 @@
             }
         },
         {
-            "description": "Specific internal energy as a function of pressure and temperature.",
+            "description": "Specific internal energy, kJ/kg as a function of pressure and temperature.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "U_PT",
             "name": "U_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input2",
                     "type": "number"
                 }
@@ -745,17 +786,18 @@
             }
         },
         {
-            "description": "Specific internal energy as a function of pressure and enthalpy",
+            "description": "Specific internal energy, kJ/kg as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "U_PH",
             "name": "U_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -765,17 +807,18 @@
             }
         },
         {
-            "description": "Specific internal energy as a function of pressure and entropy.",
+            "description": "Specific internal energy, kJ/kg as a function of pressure and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "U_PS",
             "name": "U_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -785,12 +828,13 @@
             }
         },
         {
-            "description": "Saturated vapor heat capacity",
+            "description": "Saturated vapor heat capacity, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CPV_P",
             "name": "CPV_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -800,12 +844,13 @@
             }
         },
         {
-            "description": "Saturated liquid heat capacity",
+            "description": "Saturated liquid heat capacity, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CPL_P",
             "name": "CPL_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -815,12 +860,13 @@
             }
         },
         {
-            "description": "Saturated vapor heat capacity",
+            "description": "Saturated vapor heat capacity, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CPV_T",
             "name": "CPV_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -830,12 +876,13 @@
             }
         },
         {
-            "description": "Saturated liquid heat capacity",
+            "description": "Saturated liquid heat capacity, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CPL_T",
             "name": "CPL_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -845,17 +892,18 @@
             }
         },
         {
-            "description": "Specific isobaric heat capacity as a function of pressure and temperature.",
+            "description": "Specific isobaric heat capacity, kJ/kg/K as a function of pressure and temperature.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CP_PT",
             "name": "CP_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input2",
                     "type": "number"
                 }
@@ -865,17 +913,18 @@
             }
         },
         {
-            "description": "Specific isobaric heat capacity as a function of pressure and enthalpy",
+            "description": "Specific isobaric heat capacity, kJ/kg/K as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CP_PH",
             "name": "CP_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -885,17 +934,18 @@
             }
         },
         {
-            "description": "Specific isobaric heat capacity as a function of pressure and entropy.",
+            "description": "Specific isobaric heat capacity, kJ/kg/K as a function of pressure and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CP_PS",
             "name": "CP_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -905,12 +955,13 @@
             }
         },
         {
-            "description": "Saturated vapor isochoric heat capacity",
+            "description": "Saturated vapor isochoric heat capacity, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CVV_P",
             "name": "CVV_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -920,12 +971,13 @@
             }
         },
         {
-            "description": "Saturated liquid isochoric heat capacity",
+            "description": "Saturated liquid isochoric heat capacity, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CVL_P",
             "name": "CVL_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -935,12 +987,13 @@
             }
         },
         {
-            "description": "Saturated vapor isochoric heat capacity",
+            "description": "Saturated vapor isochoric heat capacity, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CVV_T",
             "name": "CVV_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -950,12 +1003,13 @@
             }
         },
         {
-            "description": "Saturated liquid isochoric heat capacity",
+            "description": "Saturated liquid isochoric heat capacity, kJ/kg/K",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CVL_T",
             "name": "CVL_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -965,17 +1019,18 @@
             }
         },
         {
-            "description": "Specific isochoric heat capacity as a function of pressure and temperature.",
+            "description": "Specific isochoric heat capacity, kJ/kg/K as a function of pressure and temperature.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CV_PT",
             "name": "CV_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input2",
                     "type": "number"
                 }
@@ -985,17 +1040,18 @@
             }
         },
         {
-            "description": "Specific isochoric heat capacity as a function of pressure and enthalpy",
+            "description": "Specific isochoric heat capacity, kJ/kg/K as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CV_PH",
             "name": "CV_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1005,17 +1061,18 @@
             }
         },
         {
-            "description": "Specific isochoric heat capacity as a function of pressure and entropy.",
+            "description": "Specific isochoric heat capacity, kJ/kg/K as a function of pressure and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "CV_PS",
             "name": "CV_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1025,12 +1082,13 @@
             }
         },
         {
-            "description": "Saturated vapor speed of sound",
+            "description": "Saturated vapor speed of sound, m/s",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "WV_P",
             "name": "WV_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1040,12 +1098,13 @@
             }
         },
         {
-            "description": "Saturated liquid speed of sound",
+            "description": "Saturated liquid speed of sound, m/s",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "WL_P",
             "name": "WL_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1055,12 +1114,13 @@
             }
         },
         {
-            "description": "Saturated vapor speed of sound",
+            "description": "Saturated vapor speed of sound, m/s",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "WV_T",
             "name": "WV_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1070,12 +1130,13 @@
             }
         },
         {
-            "description": "Saturated liquid speed of sound",
+            "description": "Saturated liquid speed of sound, m/s",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "WL_T",
             "name": "WL_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1085,17 +1146,18 @@
             }
         },
         {
-            "description": "Speed of sound as a function of pressure and temperature.",
+            "description": "Speed of sound, m/s as a function of pressure and temperature.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "W_PT",
             "name": "W_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1105,17 +1167,18 @@
             }
         },
         {
-            "description": "Speed of sound as a function of pressure and enthalpy",
+            "description": "Speed of sound, m/s as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "W_PH",
             "name": "W_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1125,17 +1188,18 @@
             }
         },
         {
-            "description": "Speed of sound as a function of pressure and entropy.",
+            "description": "Speed of sound, m/s as a function of pressure and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "W_PS",
             "name": "W_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1145,17 +1209,18 @@
             }
         },
         {
-            "description": "Viscosity as a function of pressure and temperature.",
+            "description": "Viscosity, Pa-s as a function of pressure and temperature.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "MY_PT",
             "name": "MY_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1165,17 +1230,18 @@
             }
         },
         {
-            "description": "Viscosity as a function of pressure and enthalpy",
+            "description": "Viscosity, Pa-s as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "MY_PH",
             "name": "MY_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1185,17 +1251,18 @@
             }
         },
         {
-            "description": "Viscosity as a function of pressure and entropy.",
+            "description": "Viscosity, Pa-s as a function of pressure and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "MY_PS",
             "name": "MY_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1206,16 +1273,17 @@
         },
         {
             "description": "Prandtl as a function of Pressure and Temperature",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "PR_PT",
             "name": "PR_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "Temperature",
+                    "description": "Temperature, 'C",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1226,16 +1294,17 @@
         },
         {
             "description": "Prandtl as a function of Pressure and Enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "PR_PH",
             "name": "PR_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1245,12 +1314,13 @@
             }
         },
         {
-            "description": "Saturated vapor thermal conductivity",
+            "description": "Saturated vapor thermal conductivity, W/(m K)",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "TCL_P",
             "name": "TCL_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1260,12 +1330,13 @@
             }
         },
         {
-            "description": "Saturated liquid thermal conductivity",
+            "description": "Saturated liquid thermal conductivity, W/(m K)",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "TCV_P",
             "name": "TCV_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1275,12 +1346,13 @@
             }
         },
         {
-            "description": "Saturated vapor thermal conductivity",
+            "description": "Saturated vapor thermal conductivity, W/(m K)",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "TCL_T",
             "name": "TCL_T",
             "parameters": [
                 {
-                    "description": "Temperature",
+                    "description": "Temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1290,12 +1362,13 @@
             }
         },
         {
-            "description": "Saturated liquid thermal conductivity",
+            "description": "Saturated liquid thermal conductivity, W/(m K)",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "TCV_T",
             "name": "TCV_T",
             "parameters": [
                 {
-                    "description": "Temperature",
+                    "description": "Temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1305,17 +1378,18 @@
             }
         },
         {
-            "description": "Thermal conductivity as a function of pressure and temperature.",
+            "description": "Thermal conductivity, W/(m K) as a function of pressure and temperature.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "TC_PT",
             "name": "TC_PT",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1325,17 +1399,18 @@
             }
         },
         {
-            "description": "Thermal conductivity as a function of pressure and enthalpy",
+            "description": "Thermal conductivity, W/(m K) as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "TC_PH",
             "name": "TC_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1345,17 +1420,18 @@
             }
         },
         {
-            "description": "Thermal conductivity as a function of enthalpy and entropy",
+            "description": "Thermal conductivity, W/(m K) as a function of enthalpy and entropy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "TC_HS",
             "name": "TC_HS",
             "parameters": [
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1365,12 +1441,13 @@
             }
         },
         {
-            "description": "Surface tension for two phase water/steam as a function of Temperature",
+            "description": "Surface tension, N/m for two phase water/steam as a function of Temperature",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "ST_T",
             "name": "ST_T",
             "parameters": [
                 {
-                    "description": "temperature",
+                    "description": "temperature, 'C",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1380,12 +1457,13 @@
             }
         },
         {
-            "description": "Surface tension for two phase water/steam as a function of Pressure",
+            "description": "Surface tension, N/m for two phase water/steam as a function of Pressure",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "ST_P",
             "name": "ST_P",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 }
@@ -1396,16 +1474,17 @@
         },
         {
             "description": "vapor fraction as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "X_PH",
             "name": "X_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1416,16 +1495,17 @@
         },
         {
             "description": "vapor fraction as a function of pressure and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "X_PS",
             "name": "X_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1436,16 +1516,17 @@
         },
         {
             "description": "vapor volume fraction as a function of pressure and enthalpy",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "VX_PH",
             "name": "VX_PH",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "enthalpy",
+                    "description": "enthalpy, kJ/kg",
                     "name": "input2",
                     "type": "number"
                 }
@@ -1456,16 +1537,17 @@
         },
         {
             "description": "vapor volume fraction as a function of pressure and entropy.",
+            "helpUrl": "https://brfluid.tistory.com/52",
             "id": "VX_PS",
             "name": "VX_PS",
             "parameters": [
                 {
-                    "description": "pressure",
+                    "description": "pressure, bara",
                     "name": "input1",
                     "type": "number"
                 },
                 {
-                    "description": "entropy",
+                    "description": "entropy, kJ/kg/K",
                     "name": "input2",
                     "type": "number"
                 }

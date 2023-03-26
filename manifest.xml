@@ -55,7 +55,10 @@
           </GetStarted>
           <FunctionFile resid="Taskpane.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
-            <OfficeTab id="TabHome">
+            <!-- <OfficeTab id="TabHome"> -->
+            <!-- 상단CUSTOM메뉴생성  -->
+					  <CustomTab id="BRXsteam">
+              <Label resid="CustomTab.Label"/>
               <Group id="CommandsGroup">
                 <Label resid="CommandsGroup.Label"/>
                 <Icon>
@@ -63,9 +66,13 @@
                   <bt:Image size="32" resid="Icon.32x32"/>
                   <bt:Image size="80" resid="Icon.80x80"/>
                 </Icon>
+
+                <!-- Control. It can be of type "Button" or "Menu". -->
                 <Control xsi:type="Button" id="TaskpaneButton">
                   <Label resid="TaskpaneButton.Label"/>
                   <Supertip>
+                    <!-- ToolTip title. resid must point to a ShortString resource. -->
+                    <!-- ToolTip description. resid must point to a LongString resource. -->
                     <Title resid="TaskpaneButton.Label"/>
                     <Description resid="TaskpaneButton.Tooltip"/>
                   </Supertip>
@@ -74,13 +81,17 @@
                     <bt:Image size="32" resid="Icon.32x32"/>
                     <bt:Image size="80" resid="Icon.80x80"/>
                   </Icon>
+                  <!-- This is what happens when the command is triggered (E.g. click on the Ribbon).  -->
+                  <!-- Supported actions are ExecuteFunction or ShowTaskpane. -->
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>ButtonId1</TaskpaneId>
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
               </Group>
-            </OfficeTab>
+            <!-- </OfficeTab> -->
+            <!-- CostumTab End	 -->
+					  </CustomTab>
           </ExtensionPoint>
         </DesktopFormFactor>
       </Host>
@@ -99,13 +110,20 @@
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/taskpane.html"/>
       </bt:Urls>
+
+      <!-- ShortStrings max characters==125. -->
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="XX"/>
 
         <bt:String id="GetStarted.Title" DefaultValue="BR-XSTEAM addin"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="BRFLUID Addin"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="X-Steam SteamTable"/>
+
+        <!-- customTab -->
+			  <bt:String id="CustomTab.Label" DefaultValue="xxSteam"/>
       </bt:ShortStrings>
+
+      <!-- LongStrings max characters==250. -->
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Loaded succesfully."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open to Show a Taskpane"/>
