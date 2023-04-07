@@ -2,8 +2,8 @@
     "functions": [
         {
             "description": "check version",
-            "id": "VERSION_XSTEAM",
-            "name": "VERSION_XSTEAM",
+            "id": "VERSION_XXSTEAM",
+            "name": "VERSION_XXSTEAM",
             "parameters": [],
             "result": {
                 "type": "string"
@@ -1549,6 +1549,388 @@
                 {
                     "description": "entropy, kJ/kg/K",
                     "name": "input2",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Density,kg/m3 as input {pressure, temperature}",
+            "helpUrl": "https://brfluid.xyz",
+            "id": "HAIR_RHO_TP",
+            "name": "HAIR_RHO_TP",
+            "parameters": [
+                {
+                    "description": "temperature,'C'",
+                    "name": "temp",
+                    "type": "number"
+                },
+                {
+                    "description": "pressure, bara",
+                    "name": "press",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Wet Bulb Temperature_'C with {Dry Temp & Dew Point Temp}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_TDRY_TDEW_P",
+            "name": "HAIR_TDRY_TDEW_P",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "DewPoint Temperature,'C",
+                    "name": "tDewPoint",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Wet Bulb Temperature_'C with {Dry Temp & Rel.Humid}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_TWEB_TDRY_RH_P",
+            "name": "HAIR_TWEB_TDRY_RH_P",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Relative Humidity 0.0~1.0",
+                    "name": "relHum",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Vapor Pressure_bara with {Rel.Humid}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_PVAP_RH",
+            "name": "HAIR_PVAP_RH",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Relative Humidity 0.0~1.0",
+                    "name": "relHum",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Vapor Pressure_bara with {Dew Point Temp}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_PVAP_TDEW",
+            "name": "HAIR_PVAP_TDEW",
+            "parameters": [
+                {
+                    "description": "Dew point Temperature\"",
+                    "name": "tDewPoint",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Dry Air Enthalpy_kJ/kg with {Dry Temp}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_HDRY_TDRY",
+            "name": "HAIR_HDRY_TDRY",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Dry Air Density_kg/m3 with {Dry Temp}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_RHO_TDRY_P",
+            "name": "HAIR_RHO_TDRY_P",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Dry Air Volume_m3/kg with {Dry Temp}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_V_TDRY_P",
+            "name": "HAIR_V_TDRY_P",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Saturated (at 100% RH) Vapor Pressure_bara with {Dry Temp}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_PSAT_TDRY",
+            "name": "HAIR_PSAT_TDRY",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Humid Air Volume_m3/kg with {Dry Temp & Rel.Humid}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_V_TDRY_RH_P",
+            "name": "HAIR_V_TDRY_RH_P",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Relative Humidity 0.0~1.0",
+                    "name": "relHum",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Humid Air Density_kg/m3 with {Dry Temp & Rel.Humid}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_RHO_TDRY_RH_P",
+            "name": "HAIR_RHO_TDRY_RH_P",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Relative Humidity 0.0~1.0",
+                    "name": "relHum",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Humid Air Enthalpy_kJ/kg with {Dry Temp & Rel.Humid}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_H_TDRY_RH_P",
+            "name": "HAIR_H_TDRY_RH_P",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Relative Humidity 0.0~1.0",
+                    "name": "relHum",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Humidity ratio_kg/kgAir with {Enthalpy & Dry Temp}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_HUMR_H_TDRY",
+            "name": "HAIR_HUMR_H_TDRY",
+            "parameters": [
+                {
+                    "description": "Moist Air Enthalpy, kJ/kg",
+                    "name": "moistAirEnthalpy",
+                    "type": "number"
+                },
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Humidity ratio_kg/kgAir with {Enthalpy & Dry Temp}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_HUMR_PVAP_P",
+            "name": "HAIR_HUMR_PVAP_P",
+            "parameters": [
+                {
+                    "description": "Vapor Pressure, bara",
+                    "name": "vapPres",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Humidity ratio_kg/kgDA with {Dry Temp & Rel.Humid}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_HUMR_TDRY_RH_P",
+            "name": "HAIR_HUMR_TDRY_RH_P",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Relative Humidity 0.0~1.0",
+                    "name": "relHum",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "*Get Relative Humidity_decimal with {Dry Temp & Humidity Ratio}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_RH_TDRY_HUMR_P",
+            "name": "HAIR_RH_TDRY_HUMR_P",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Humidity ratio, kg/kgAir",
+                    "name": "humRatio",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Get Relative Humidity_decimal with {Dry Temp & Wet Temp}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HAIR_RH_TDRY_TWEB",
+            "name": "HAIR_RH_TDRY_TWEB",
+            "parameters": [
+                {
+                    "description": "Dry Temperature,'C",
+                    "name": "tDryBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Wet Temperature,'C",
+                    "name": "tWetBulb",
+                    "type": "number"
+                },
+                {
+                    "description": "Pressure, bara",
+                    "name": "pressure",
                     "type": "number"
                 }
             ],

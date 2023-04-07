@@ -10,7 +10,7 @@
   <HighResolutionIconUrl DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/iconXsteam-64.png"/>
   <SupportUrl DefaultValue="https://www.brfluid.xyz/help"/>
   <AppDomains>
-    <AppDomain>https://www.brfluid.xyz</AppDomain>
+    <AppDomain>https://brfluid.xyz</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
