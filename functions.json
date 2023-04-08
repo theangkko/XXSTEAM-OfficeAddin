@@ -1578,6 +1578,22 @@
             }
         },
         {
+            "description": "Viscosity, cP as input {temperature}",
+            "helpUrl": "https://www.omnicalculator.com/physics/kinematic-viscosity-of-air",
+            "id": "HAIR_VIS_T",
+            "name": "HAIR_VIS_T",
+            "parameters": [
+                {
+                    "description": "temperature,'C'",
+                    "name": "temp",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
             "description": "Get Wet Bulb Temperature_'C with {Dry Temp & Dew Point Temp}",
             "helpUrl": "https://brfluid.xyz/54",
             "id": "HAIR_TDRY_TDEW_P",
