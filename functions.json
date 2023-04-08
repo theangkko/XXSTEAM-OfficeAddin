@@ -1559,17 +1559,17 @@
         {
             "description": "Density,kg/m3 as input {pressure, temperature}",
             "helpUrl": "https://brfluid.xyz",
-            "id": "HAIR_RHO_TP",
-            "name": "HAIR_RHO_TP",
+            "id": "HAIR_RHO_PT",
+            "name": "HAIR_RHO_PT",
             "parameters": [
-                {
-                    "description": "temperature,'C'",
-                    "name": "temp",
-                    "type": "number"
-                },
                 {
                     "description": "pressure, bara",
                     "name": "press",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature,'C'",
+                    "name": "temp",
                     "type": "number"
                 }
             ],
@@ -1578,7 +1578,7 @@
             }
         },
         {
-            "description": "Viscosity, cP as input {temperature}",
+            "description": "Viscosity, Pa-s as input {temperature}",
             "helpUrl": "https://www.omnicalculator.com/physics/kinematic-viscosity-of-air",
             "id": "HAIR_VIS_T",
             "name": "HAIR_VIS_T",
