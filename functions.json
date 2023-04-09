@@ -10,7 +10,7 @@
             }
         },
         {
-            "description": "friction factor",
+            "description": "Get friction factor with {dia_mm, roughness_mm, reynolds}",
             "id": "FRICTIONFACTOR",
             "name": "FRICTIONFACTOR",
             "parameters": [
@@ -1559,8 +1559,8 @@
         {
             "description": "Density,kg/m3 as input {pressure, temperature}",
             "helpUrl": "https://brfluid.xyz",
-            "id": "HAIR_RHO_PT",
-            "name": "HAIR_RHO_PT",
+            "id": "HUMIDAIR_RHO_PT",
+            "name": "HUMIDAIR_RHO_PT",
             "parameters": [
                 {
                     "description": "pressure, bara",
@@ -1580,8 +1580,8 @@
         {
             "description": "Viscosity, Pa-s as input {temperature}",
             "helpUrl": "https://www.omnicalculator.com/physics/kinematic-viscosity-of-air",
-            "id": "HAIR_VIS_T",
-            "name": "HAIR_VIS_T",
+            "id": "HUMIDAIR_VIS_T",
+            "name": "HUMIDAIR_VIS_T",
             "parameters": [
                 {
                     "description": "temperature,'C'",
@@ -1596,8 +1596,8 @@
         {
             "description": "Get Wet Bulb Temperature_'C with {Dry Temp & Dew Point Temp}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_TDRY_TDEW_P",
-            "name": "HAIR_TDRY_TDEW_P",
+            "id": "HUMIDAIR_TDRY_TDEW_P",
+            "name": "HUMIDAIR_TDRY_TDEW_P",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1622,8 +1622,8 @@
         {
             "description": "Get Wet Bulb Temperature_'C with {Dry Temp & Rel.Humid}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_TWEB_TDRY_RH_P",
-            "name": "HAIR_TWEB_TDRY_RH_P",
+            "id": "HUMIDAIR_TWEB_TDRY_RH_P",
+            "name": "HUMIDAIR_TWEB_TDRY_RH_P",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1648,8 +1648,8 @@
         {
             "description": "Get Vapor Pressure_bara with {Rel.Humid}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_PVAP_RH",
-            "name": "HAIR_PVAP_RH",
+            "id": "HUMIDAIR_PVAP_TDRY_RH",
+            "name": "HUMIDAIR_PVAP_TDRY_RH",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1669,8 +1669,8 @@
         {
             "description": "Get Vapor Pressure_bara with {Dew Point Temp}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_PVAP_TDEW",
-            "name": "HAIR_PVAP_TDEW",
+            "id": "HUMIDAIR_PVAP_TDEW",
+            "name": "HUMIDAIR_PVAP_TDEW",
             "parameters": [
                 {
                     "description": "Dew point Temperature\"",
@@ -1685,8 +1685,8 @@
         {
             "description": "Get Dry Air Enthalpy_kJ/kg with {Dry Temp}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_HDRY_TDRY",
-            "name": "HAIR_HDRY_TDRY",
+            "id": "HUMIDAIR_HDRY_TDRY",
+            "name": "HUMIDAIR_HDRY_TDRY",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1701,8 +1701,8 @@
         {
             "description": "Get Dry Air Density_kg/m3 with {Dry Temp}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_RHO_TDRY_P",
-            "name": "HAIR_RHO_TDRY_P",
+            "id": "HUMIDAIR_RHO_TDRY_P",
+            "name": "HUMIDAIR_RHO_TDRY_P",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1722,8 +1722,8 @@
         {
             "description": "Get Dry Air Volume_m3/kg with {Dry Temp}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_V_TDRY_P",
-            "name": "HAIR_V_TDRY_P",
+            "id": "HUMIDAIR_V_TDRY_P",
+            "name": "HUMIDAIR_V_TDRY_P",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1743,8 +1743,8 @@
         {
             "description": "Get Saturated (at 100% RH) Vapor Pressure_bara with {Dry Temp}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_PSAT_TDRY",
-            "name": "HAIR_PSAT_TDRY",
+            "id": "HUMIDAIR_PSAT_TDRY",
+            "name": "HUMIDAIR_PSAT_TDRY",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1759,8 +1759,8 @@
         {
             "description": "Get Humid Air Volume_m3/kg with {Dry Temp & Rel.Humid}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_V_TDRY_RH_P",
-            "name": "HAIR_V_TDRY_RH_P",
+            "id": "HUMIDAIR_V_TDRY_RH_P",
+            "name": "HUMIDAIR_V_TDRY_RH_P",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1785,8 +1785,8 @@
         {
             "description": "Get Humid Air Density_kg/m3 with {Dry Temp & Rel.Humid}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_RHO_TDRY_RH_P",
-            "name": "HAIR_RHO_TDRY_RH_P",
+            "id": "HUMIDAIR_RHO_TDRY_RH_P",
+            "name": "HUMIDAIR_RHO_TDRY_RH_P",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1811,8 +1811,8 @@
         {
             "description": "Get Humid Air Enthalpy_kJ/kg with {Dry Temp & Rel.Humid}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_H_TDRY_RH_P",
-            "name": "HAIR_H_TDRY_RH_P",
+            "id": "HUMIDAIR_H_TDRY_RH_P",
+            "name": "HUMIDAIR_H_TDRY_RH_P",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1837,8 +1837,8 @@
         {
             "description": "Get Humidity ratio_kg/kgAir with {Enthalpy & Dry Temp}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_HUMR_H_TDRY",
-            "name": "HAIR_HUMR_H_TDRY",
+            "id": "HUMIDAIR_HUMR_H_TDRY",
+            "name": "HUMIDAIR_HUMR_H_TDRY",
             "parameters": [
                 {
                     "description": "Moist Air Enthalpy, kJ/kg",
@@ -1858,8 +1858,8 @@
         {
             "description": "Get Humidity ratio_kg/kgAir with {Enthalpy & Dry Temp}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_HUMR_PVAP_P",
-            "name": "HAIR_HUMR_PVAP_P",
+            "id": "HUMIDAIR_HUMR_PVAP_P",
+            "name": "HUMIDAIR_HUMR_PVAP_P",
             "parameters": [
                 {
                     "description": "Vapor Pressure, bara",
@@ -1879,8 +1879,8 @@
         {
             "description": "Get Humidity ratio_kg/kgDA with {Dry Temp & Rel.Humid}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_HUMR_TDRY_RH_P",
-            "name": "HAIR_HUMR_TDRY_RH_P",
+            "id": "HUMIDAIR_HUMR_TDRY_RH_P",
+            "name": "HUMIDAIR_HUMR_TDRY_RH_P",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1905,8 +1905,8 @@
         {
             "description": "*Get Relative Humidity_decimal with {Dry Temp & Humidity Ratio}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_RH_TDRY_HUMR_P",
-            "name": "HAIR_RH_TDRY_HUMR_P",
+            "id": "HUMIDAIR_RH_TDRY_HUMR_P",
+            "name": "HUMIDAIR_RH_TDRY_HUMR_P",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
@@ -1931,8 +1931,8 @@
         {
             "description": "Get Relative Humidity_decimal with {Dry Temp & Wet Temp}",
             "helpUrl": "https://brfluid.xyz/54",
-            "id": "HAIR_RH_TDRY_TWEB",
-            "name": "HAIR_RH_TDRY_TWEB",
+            "id": "HUMIDAIR_RH_TDRY_TWEB",
+            "name": "HUMIDAIR_RH_TDRY_TWEB",
             "parameters": [
                 {
                     "description": "Dry Temperature,'C",
