@@ -1559,8 +1559,8 @@
         {
             "description": "Density,kg/m3 as input {pressure, temperature}",
             "helpUrl": "https://brfluid.xyz",
-            "id": "HUMIDAIR_RHO_PT",
-            "name": "HUMIDAIR_RHO_PT",
+            "id": "HAIR_RHO_PT",
+            "name": "HAIR_RHO_PT",
             "parameters": [
                 {
                     "description": "pressure, bara",
