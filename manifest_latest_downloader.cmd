@@ -10,7 +10,7 @@ IF EXIST %FolderLocation% (
     ECHO Found existing folder for install manifests!
 ) 
 
-curl.exe --output %FolderLocation%/manifest_brsteam.xml --url https://theangkko.github.io/BR-XSTEAM-OfficeAddin/manifest_brxsteam.xml --ssl-no-revoke
+curl.exe --output %FolderLocation%/manifest_xxsteam.xml --url https://theangkko.github.io/XXSTEAM-OfficeAddin/manifest_xxsteam.xml --ssl-no-revoke
 
 ECHO [32mDone![0m
 pause

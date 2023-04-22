@@ -4,11 +4,11 @@
   <Version>1.0.0.0</Version>
   <ProviderName>BRFLUID</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="X-Steam  by BRFLUID"/>
-  <Description DefaultValue="X-steam Excel functions in JavaScript"/>
-  <IconUrl DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/iconXsteam-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/iconXsteam-64.png"/>
-  <SupportUrl DefaultValue="https://www.brfluid.xyz/help"/>
+  <DisplayName DefaultValue="by BRFLUID"/>
+  <Description DefaultValue="SteamTable and Fluid property Excel functions in JavaScript"/>
+  <IconUrl DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/assets/iconXsteam-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/assets/iconXsteam-64.png"/>
+  <SupportUrl DefaultValue="https://www.brfluid.xyz/50"/>
   <AppDomains>
     <AppDomain>https://brfluid.xyz</AppDomain>
   </AppDomains>
@@ -24,7 +24,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/taskpane.html"/>
+    <SourceLocation DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/taskpane.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -57,7 +57,7 @@
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <!-- <OfficeTab id="TabHome"> -->
             <!-- 상단CUSTOM메뉴생성  -->
-					  <CustomTab id="BRXsteam">
+					  <CustomTab id="xxSteam">
               <Label resid="CustomTab.Label"/>
               <Group id="CommandsGroup">
                 <Label resid="CommandsGroup.Label"/>
@@ -98,26 +98,26 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/iconXsteam-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/iconXsteam-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/assets/iconXsteam-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/assets/iconXsteam-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/assets/iconXsteam-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/assets/iconXsteam-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Functions.Script.Url" DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/functions.js"/>
-        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/functions.json"/>
-        <bt:Url id="Functions.Page.Url" DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/functions.html"/>
+        <bt:Url id="Functions.Script.Url" DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/functions.js"/>
+        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/functions.json"/>
+        <bt:Url id="Functions.Page.Url" DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/functions.html"/>
 
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://theangkko.github.io/BR-XSTEAM-OfficeAddin/taskpane.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/taskpane.html"/>
       </bt:Urls>
 
       <!-- ShortStrings max characters==125. -->
       <bt:ShortStrings>
-        <bt:String id="Functions.Namespace" DefaultValue="XX"/>
+        <bt:String id="Functions.Namespace" DefaultValue="xx"/>
 
-        <bt:String id="GetStarted.Title" DefaultValue="BR-XSTEAM addin"/>
+        <bt:String id="GetStarted.Title" DefaultValue="xx-Steam Addin"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="BRFLUID Addin"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="X-Steam SteamTable"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="xx-Steam SteamTable"/>
 
         <!-- customTab -->
 			  <bt:String id="CustomTab.Label" DefaultValue="xxSteam"/>

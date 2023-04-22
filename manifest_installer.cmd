@@ -50,8 +50,8 @@ ECHO Created folder for install manifest @%FolderLocation%.
 ECHO Download install manifest to folder..
 
 @REM Download install manifests into new folder
-@REM curl.exe --output %FolderLocation%/manifest_brxsteam.xml --url https://theangkko.github.io/BR-XSTEAM-OfficeAddin/manifest_brxsteam.xml --ssl-no-revoke
-curl.exe --output %FolderLocation%/manifest_brxsteam.xml --url https://theangkko.github.io/BR-XSTEAM-OfficeAddin/manifest_brxsteam.xml --ssl-no-revoke
+@REM curl.exe --output %FolderLocation%/manifest_xxsteam.xml --url https://theangkko.github.io/xxSTEAM-OfficeAddin/manifest_xxsteam.xml --ssl-no-revoke
+curl.exe --output %FolderLocation%/manifest_xxsteam.xml --url https://theangkko.github.io/xxSTEAM-OfficeAddin/manifest_xxsteam.xml --ssl-no-revoke
 
 ECHO Share folder with Excel network..
 
