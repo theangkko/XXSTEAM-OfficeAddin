@@ -10,6 +10,24 @@
             }
         },
         {
+            "description": "check version",
+            "id": "VERSION_HUMIDAIR",
+            "name": "VERSION_HUMIDAIR",
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "check version",
+            "id": "VERSION_COOLPROP",
+            "name": "VERSION_COOLPROP",
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
             "description": "Get friction factor with {dia_mm, roughness_mm, reynolds}",
             "id": "FRICTIONFACTOR",
             "name": "FRICTIONFACTOR",
@@ -1947,6 +1965,93 @@
                 {
                     "description": "Pressure, bara",
                     "name": "pressure",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "CoolProp PropsSI function as input {OutputName, InputName1, Input1, InputName2, Input2, Fluid}",
+            "helpUrl": "https://brfluid.xyz",
+            "id": "PROPSSI",
+            "name": "PROPSSI",
+            "parameters": [
+                {
+                    "description": "output parameter,",
+                    "name": "OutputName",
+                    "type": "string"
+                },
+                {
+                    "description": "input1 parameter,",
+                    "name": "InputName1",
+                    "type": "string"
+                },
+                {
+                    "description": "number1,",
+                    "name": "InputValue1",
+                    "type": "number"
+                },
+                {
+                    "description": "input2 parameter,",
+                    "name": "InputName2",
+                    "type": "string"
+                },
+                {
+                    "description": "number2,",
+                    "name": "InputValue2",
+                    "type": "number"
+                },
+                {
+                    "description": "fluid name,",
+                    "name": "Fluid",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "CoolProp HAPropsSI function as input {OutputName, InputName1, Input1, InputName2, Input2, InputName3, Input3}",
+            "helpUrl": "https://brfluid.xyz",
+            "id": "HAPROPSSI",
+            "name": "HAPROPSSI",
+            "parameters": [
+                {
+                    "description": "output parameter,",
+                    "name": "OutputName",
+                    "type": "string"
+                },
+                {
+                    "description": "input1 parameter,",
+                    "name": "InputName1",
+                    "type": "string"
+                },
+                {
+                    "description": "number1,",
+                    "name": "InputValue1",
+                    "type": "number"
+                },
+                {
+                    "description": "input2 parameter,",
+                    "name": "InputName2",
+                    "type": "string"
+                },
+                {
+                    "description": "number2,",
+                    "name": "InputValue2",
+                    "type": "number"
+                },
+                {
+                    "description": "input3 parameter,",
+                    "name": "InputName3",
+                    "type": "string"
+                },
+                {
+                    "description": "number3,",
+                    "name": "InputValue3",
                     "type": "number"
                 }
             ],
