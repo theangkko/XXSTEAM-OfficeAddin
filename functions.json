@@ -1575,27 +1575,6 @@
             }
         },
         {
-            "description": "Density,kg/m3 as input {pressure, temperature}",
-            "helpUrl": "https://brfluid.xyz",
-            "id": "HAIR_RHO_PT",
-            "name": "HAIR_RHO_PT",
-            "parameters": [
-                {
-                    "description": "pressure, bara",
-                    "name": "press",
-                    "type": "number"
-                },
-                {
-                    "description": "temperature,'C'",
-                    "name": "temp",
-                    "type": "number"
-                }
-            ],
-            "result": {
-                "type": "number"
-            }
-        },
-        {
             "description": "Viscosity, Pa-s as input {temperature}",
             "helpUrl": "https://www.omnicalculator.com/physics/kinematic-viscosity-of-air",
             "id": "HUMIDAIR_VIS_T",
@@ -1973,8 +1952,34 @@
             }
         },
         {
+            "description": "Density,kg/m3 as input {pressure, temperature, RHratio}",
+            "helpUrl": "https://brfluid.xyz/54",
+            "id": "HUMIDAIR_RHO_PTRH",
+            "name": "HUMIDAIR_RHO_PTRH",
+            "parameters": [
+                {
+                    "description": "pressure, bara",
+                    "name": "press",
+                    "type": "number"
+                },
+                {
+                    "description": "temperature,'C'",
+                    "name": "temp",
+                    "type": "number"
+                },
+                {
+                    "description": "Relative Humidity 0.0~1.0",
+                    "name": "relHum",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
             "description": "CoolProp PropsSI function as input {OutputName, InputName1, Input1, InputName2, Input2, Fluid}",
-            "helpUrl": "https://brfluid.xyz",
+            "helpUrl": "http://coolprop.org/coolprop/HighLevelAPI.html#table-of-string-inputs-to-propssi-function",
             "id": "PROPSSI",
             "name": "PROPSSI",
             "parameters": [
@@ -2015,7 +2020,7 @@
         },
         {
             "description": "CoolProp HAPropsSI function as input {OutputName, InputName1, Input1, InputName2, Input2, InputName3, Input3}",
-            "helpUrl": "https://brfluid.xyz",
+            "helpUrl": "http://coolprop.org/fluid_properties/HumidAir.html#table-of-inputs-outputs-to-hapropssi",
             "id": "HAPROPSSI",
             "name": "HAPROPSSI",
             "parameters": [
