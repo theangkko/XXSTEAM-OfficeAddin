@@ -19,15 +19,6 @@
             }
         },
         {
-            "description": "check version",
-            "id": "ADDIN_VERSION_COOLPROP",
-            "name": "ADDIN_VERSION_COOLPROP",
-            "parameters": [],
-            "result": {
-                "type": "string"
-            }
-        },
-        {
             "description": "Get friction factor with {dia_mm, roughness_mm, reynolds}",
             "id": "FRICTIONFACTOR",
             "name": "FRICTIONFACTOR",
