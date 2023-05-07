@@ -1,0 +1,1 @@
+export function addtwofromJS(o){return o+5}export function HUMIDAIR_RHO_PTRH(o,r,t){return 1/Module.HAPropsSI("Vha","T",r+273.15,"P",1e5*o,"R",t)}export function PropsSI(o,r,t,e,n,u){return Module.PropsSI(o,r,t,e,n,u)}export function HAPropsSI(o,r,t,e,n,u,p){return Module.HAPropsSI(o,r,t,e,n,u,p)}

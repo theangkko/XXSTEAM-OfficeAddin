@@ -1,1 +1,0 @@
-export function addtwofromJS(o){return o+5}
