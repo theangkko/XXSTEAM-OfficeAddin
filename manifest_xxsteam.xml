@@ -8,7 +8,7 @@
   <Description DefaultValue="SteamTable and Fluid property Excel functions in JavaScript"/>
   <IconUrl DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/assets/iconXsteam-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://theangkko.github.io/XXSTEAM-OfficeAddin/assets/iconXsteam-64.png"/>
-  <SupportUrl DefaultValue="https://www.brfluid.xyz/50"/>
+  <SupportUrl DefaultValue="https://brfluid.xyz/50"/>
   <AppDomains>
     <AppDomain>https://brfluid.xyz</AppDomain>
   </AppDomains>
